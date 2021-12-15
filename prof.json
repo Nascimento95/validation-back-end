@@ -1,0 +1,16 @@
+[
+	{
+		"slug": "benoit",
+		"name": "Benoit",
+		"password": "on-y-va-ahmed",
+		"city": "Paris",
+		"profile_picture": "https://media-exp1.licdn.com/dms/image/C4E03AQGpKjbKhe5Cwg/profile-displayphoto-shrink_200_200/0/1623924860868?e=1641427200&v=beta&t=CJJ-AwFxJSFBr9Wc1mYmmXeL8BNfLui5gbZjHFZP2fE"
+	},
+	{
+		"slug": "ahmed",
+		"name": "Ahmed",
+		"password": "merci-de-votre-attention",
+		"city": "Tokyo",
+		"profile_picture": "https://www.grandeecolenumerique.fr/sites/default/files/styles/full_width/public/2021-03/890x552_ahmed.jpg?itok=CQHgmuC5"
+	}
+]
