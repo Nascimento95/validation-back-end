@@ -22,14 +22,20 @@ app.post("/profs",
     body("name")
     .exists()
     .withMessage("clef name demender")
-    .isLength({ min:4 }),
+    .isLength({ min:4  })
+    .withMessage("name trop court"),
     body("password")
     .exists()
     .withMessage("clef password demender")
-    .isLength({ min:8 }),
+    .isLength({ min:8 })
+    .withMessage("password trop court"),
     body('city')
     .optional()
     .isIn(["paris", "tokyo", "los-angeles", "lisbonne"]).withMessage("valeur de la ville pas accepter"),
+    body("email")
+    .exists()
+    .isEmail()
+    .withMessage("votre email n'est pas valide"),
     (req, res) => {
         // je stock errors 
         const { errors } = validationResult(req)
@@ -46,7 +52,7 @@ app.post("/profs",
             }
             // je push le nouveau prof dans mon json
             profs = [...profs, newProf ]
-            res.status(200).send("prof crée").json(heros)
+            res.status(200).json(newProf)
             // console.log(" resulta du post =>",heros);
         }
 })
